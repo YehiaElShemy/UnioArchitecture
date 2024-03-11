@@ -11,7 +11,5 @@ namespace UnioArchitecture.Application.Contracts
     {
         Task<List<Product>> FillterByNameAsync();
         Task<List<Product>> FillterByPriceAsync();
-
-
     }
 }

@@ -8,7 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\UnioArchitecture .Domain\UnioArchitecture .Domain.csproj" />
-    <ProjectReference Include="..\UnioArchitecture.DTO\UnioArchitecture.DTO.csproj" />
+    <ProjectReference Include="..\UnioArchitecture.Application\UnioArchitecture.Application.csproj" />
+    <ProjectReference Include="..\UnioArchitecture.Context\UnioArchitecture.Context.csproj" />
   </ItemGroup>
 
 </Project>

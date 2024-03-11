@@ -9,11 +9,11 @@ namespace UnioArchitecture.Application.Contracts
 {
     public interface IRepository<TEntity,Tid> //where TEntity: class
     {
-        Task<List<TEntity>> GetAllAsync();
+        Task<IQueryable<TEntity>> GetAllAsync();
         Task<TEntity> GetByIdAsync(Tid id);
         Task<TEntity> CreateAsync(TEntity category);
         Task<bool> UpdateAsync(TEntity category);
-        Task<bool> DeleteAsync(Tid id);
+        Task<bool> DeleteAsync(TEntity TEntity);
         Task<int> SaveChangesAsync();
     }
 }
